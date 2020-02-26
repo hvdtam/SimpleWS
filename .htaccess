@@ -1,0 +1,4 @@
+RewriteEngine On
+ 
+RewriteRule ^ws/([0-9]*)$ service.php?id=$1&format=json [NC,L]
+RewriteRule ^call/([0-9]*)$ call.php?song_id=$1 [L]
